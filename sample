@@ -21,7 +21,7 @@ stages:
         steps:
         - task: GitClone@2
           inputs:
-            repository: 'https://snaik007@bitbucket.org:3whhsa3fi4ewadep75nvayogza5w54kkilljkbqf2zzf35azt23q/patientpay/base-event-store.git'
+            repository: 
             branch: 'develop'
             depth: 1
             submodules: 'recursive'

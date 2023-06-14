@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: dev-test
+  labels:
+   dev: test
+spec:
+ replicas: 2
+ selector: 
+  matchLabels:
+    dev: test
+ template:
+  metadata:
+   name: dev-test
+   labels:
+    dev: test
+  spec:
+    containers:
+    - name: dev
+      image: redis
